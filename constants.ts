@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     title: "Website Testimonial Showcase",
     category: ProjectCategory.WEB_ASSETS,
     description: "A visually engaging testimonial layout designed for the CLEAR Acceleration Inc. website to build social proof and credibility.",
-    link: "https://www.canva.com/design/DAGsrDjdwME/yVdJgN7UJUbfWxS9kZOo_g/edit?utm_content=DAGsrDjdwME&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    link: "https://www.canva.com/design/DAGr25vuJDc/ftoLKf2pn0a83NvptaQS0A/edit?utm_content=DAGr25vuJDc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     tags: ["Web Design", "Social Proof", "UI Element"]
   },
   {
@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "p5",
-    title: "LadSprint Promo Header",
+    title: "Lead Sprint Promo Header Design",
     category: ProjectCategory.WEB_ASSETS,
     description: "High-impact web header designed for the LadSprint promotion campaign for CLEAR Acceleration Inc. Optimized for web responsiveness.",
     link: "https://www.canva.com/design/DAGsgq-Zv4I/ksYJxjJhSd1v4eITq0McNg/edit?utm_content=DAGsgq-Zv4I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
