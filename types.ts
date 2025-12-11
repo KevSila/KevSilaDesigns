@@ -13,17 +13,7 @@ export interface Project {
   description: string;
   category: ProjectCategory;
   link: string;
-  imagePlaceholder: string; // URL for a placeholder since we don't have direct image files
   tags: string[];
-}
-
-export interface ExperienceItem {
-  id: string;
-  role: string;
-  company: string;
-  period: string;
-  description: string;
-  achievements: string[];
 }
 
 export interface Skill {
