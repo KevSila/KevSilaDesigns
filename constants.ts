@@ -1,6 +1,6 @@
 import { Project, ProjectCategory, Skill } from './types';
 
-export const MAIN_PORTFOLIO_URL = "https://www.kevsilaportfolio.netlify.app";
+export const MAIN_PORTFOLIO_URL = "https://kevsilaportfolio.netlify.app";
 
 export const PERSONAL_INFO = {
   name: "Kevin Yumbya Sila",
