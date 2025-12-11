@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Linkedin, Mail, ArrowUpRight, ChevronRight, Palette, Code, BarChart, Smartphone } from 'lucide-react';
-import { PERSONAL_INFO, PROJECTS, SKILLS } from './constants';
+import { Menu, X, Linkedin, Mail, ArrowUpRight, ChevronRight, Palette, Code, BarChart, Smartphone, ExternalLink } from 'lucide-react';
+import { PERSONAL_INFO, PROJECTS, SKILLS, MAIN_PORTFOLIO_URL } from './constants';
 import { ProjectCategory } from './types';
 
 // 1. Navigation Component
@@ -159,23 +159,38 @@ const Portfolio: React.FC = () => {
   return (
     <section id="work" className="py-24 bg-dark-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 gap-6">
-          <h2 className="text-3xl font-bold text-white">Selected Work</h2>
-          
-          <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setFilter(cat as ProjectCategory | 'All')}
-                className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
-                  filter === cat 
-                    ? 'bg-white text-dark-900' 
-                    : 'bg-dark-800 text-slate-400 hover:text-white'
-                }`}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-white mb-4">Curated Design Showcase</h2>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div className="max-w-2xl text-slate-400 text-lg leading-relaxed">
+              <p className="mb-4">
+                This collection highlights specific design projects created for various clients. It is a selection of my visual and branding work.
+              </p>
+              <a 
+                href={MAIN_PORTFOLIO_URL} 
+                target="_blank" 
+                rel="noreferrer" 
+                className="inline-flex items-center gap-2 text-brand-500 hover:text-brand-400 font-medium transition-colors border-b border-brand-500/30 pb-0.5 hover:border-brand-500"
               >
-                {cat}
-              </button>
-            ))}
+                View my full professional portfolio & experience <ExternalLink size={16} />
+              </a>
+            </div>
+            
+            <div className="flex flex-wrap gap-2">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setFilter(cat as ProjectCategory | 'All')}
+                  className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
+                    filter === cat 
+                      ? 'bg-white text-dark-900' 
+                      : 'bg-dark-800 text-slate-400 hover:text-white'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
