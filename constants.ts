@@ -118,5 +118,13 @@ export const PROJECTS: Project[] = [
     description: "A motion graphic promotional video for Zenfit detailing seasonal Ramadan offers.",
     link: "https://www.canva.com/design/DAGgehqWJwI/xJWjACyzKRub97zulhEbPA/edit?utm_content=DAGgehqWJwI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     tags: ["Video Ad", "Motion Graphics", "Social Media"]
+  },
+  {
+    id: "p13",
+    title: "Pinterest SEO Pins - Firelit Mind & Attention by Design",
+    category: ProjectCategory.WEB_ASSETS,
+    description: "SEO-optimised Pinterest pin designs for my two books, 'Firelit Mind' and 'Attention by Design'. Designed to demonstrate how to build discoverable pins using brand kits, cohesive colors, and a unified design language.",
+    link: "https://canva.link/uqupex2antwnpw7",
+    tags: ["Pinterest Pins", "SEO", "Social Media", "Branding"]
   }
 ];
