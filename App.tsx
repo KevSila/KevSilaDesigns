@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark-950/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
+    <nav aria-label="Primary navigation" className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-dark-950/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
@@ -202,7 +202,7 @@ const Portfolio: React.FC = () => {
               <a 
                 href={MAIN_PORTFOLIO_URL} 
                 target="_blank" 
-                rel="noreferrer" 
+                rel="noopener noreferrer" 
                 className="inline-flex items-center gap-2 text-brand-500 hover:text-brand-400 font-medium transition-colors border-b border-brand-500/30 pb-0.5 hover:border-brand-500"
               >
                 View full professional portfolio & experience <ExternalLink size={16} />
@@ -214,6 +214,7 @@ const Portfolio: React.FC = () => {
                 <button
                   key={cat}
                   onClick={() => setFilter(cat as ProjectCategory | 'All')}
+                  aria-pressed={filter === cat}
                   className={`px-4 py-1.5 rounded-full text-xs font-medium transition-all ${
                     filter === cat 
                       ? 'bg-white text-dark-900' 
@@ -233,7 +234,7 @@ const Portfolio: React.FC = () => {
               key={project.id}
               href={project.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group block h-full p-8 bg-gradient-to-br from-dark-950 to-slate-950 border border-slate-800 rounded-2xl hover:border-brand-500/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-brand-500/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               <div className="flex justify-between items-start mb-6">
