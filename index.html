@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-KE">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Yumbya Sila | Portfolio</title>
-    <meta name="description" content="Portfolio of Kevin Yumbya Sila - Developer, Digital Strategist, and UI/UX Designer based in Nairobi." />
+
+    <title>Kevin Yumbya Sila | UI/UX, Graphic Design & Digital Strategy Portfolio</title>
+    <meta
+      name="description"
+      content="Explore the design portfolio of Kevin Yumbya Sila, a Nairobi-based UI/UX designer and digital strategist creating brand assets, web experiences, print design and SEO-led digital content."
+    />
+    <meta name="author" content="Kevin Yumbya Sila" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#020617" />
+
+    <link rel="canonical" href="https://kevsiladesigns.netlify.app/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_KE" />
+    <meta property="og:site_name" content="Kevin Yumbya Sila | Design Portfolio" />
+    <meta property="og:url" content="https://kevsiladesigns.netlify.app/" />
+    <meta property="og:title" content="Kevin Yumbya Sila | UI/UX, Graphic Design & Digital Strategy Portfolio" />
+    <meta
+      property="og:description"
+      content="Selected UI/UX, graphic design, web, print and digital strategy work by Nairobi-based designer Kevin Yumbya Sila."
+    />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kevin Yumbya Sila | Design Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Selected UI/UX, graphic design, web, print and digital strategy work by Kevin Yumbya Sila."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -14,6 +50,7 @@
               brand: {
                 50: '#f0f9ff',
                 100: '#e0f2fe',
+                400: '#38bdf8',
                 500: '#0ea5e9',
                 600: '#0284c7',
                 900: '#0c4a6e',
@@ -32,27 +69,67 @@
         }
       }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-      body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Inter', sans-serif; }
+      ::selection { background: #0ea5e9; color: #ffffff; }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/client": "https://esm.sh/react-dom@^19.2.1/client",
-    "react-dom": "https://esm.sh/react-dom@^19.2.1",
-    "react": "https://esm.sh/react@^19.2.1",
-    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "react/": "https://esm.sh/react@^19.2.1/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-dark-950 text-slate-300 antialiased selection:bg-brand-500 selection:text-white">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://kevsiladesigns.netlify.app/#person",
+            "name": "Kevin Yumbya Sila",
+            "url": "https://kevsiladesigns.netlify.app/",
+            "jobTitle": "UI/UX Designer and Digital Strategist",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Nairobi",
+              "addressCountry": "KE"
+            },
+            "sameAs": [
+              "https://linkedin.com/in/kevin-sila-9143b618a"
+            ],
+            "knowsAbout": [
+              "UI/UX Design",
+              "Graphic Design",
+              "Web Design",
+              "Digital Strategy",
+              "Search Engine Optimization",
+              "Content Design"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://kevsiladesigns.netlify.app/#website",
+            "url": "https://kevsiladesigns.netlify.app/",
+            "name": "Kevin Yumbya Sila | Design Portfolio",
+            "description": "UI/UX, graphic design, web, print and digital strategy portfolio.",
+            "publisher": {
+              "@id": "https://kevsiladesigns.netlify.app/#person"
+            },
+            "inLanguage": "en-KE"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="bg-dark-950 text-slate-300 antialiased">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <noscript>
+      <main style="max-width: 760px; margin: 4rem auto; padding: 0 1.25rem; color: #cbd5e1;">
+        <h1 style="color: white;">Kevin Yumbya Sila — Design Portfolio</h1>
+        <p>
+          Nairobi-based UI/UX designer and digital strategist creating brand assets, web experiences,
+          print design and SEO-led digital content. JavaScript is required to view the interactive portfolio.
+        </p>
+      </main>
+    </noscript>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
