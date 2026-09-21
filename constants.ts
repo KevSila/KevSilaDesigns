@@ -4,22 +4,22 @@ export const MAIN_PORTFOLIO_URL = "https://kevsilaportfolio.netlify.app";
 
 export const PERSONAL_INFO = {
   name: "Kevin Yumbya Sila",
-  role: "Developer & Digital Media Strategist",
-  tagline: "Bridging Data, Design, and Strategy to drive impactful change.",
+  role: "UI/UX Designer & Digital Strategist",
+  tagline: "Designing clear digital experiences, visual systems, and content that turn ideas into action.",
   location: "Nairobi, Kenya",
   email: "kevinsila100@gmail.com",
   phone: "+254 717-578394",
   linkedin: "https://linkedin.com/in/kevin-sila-9143b618a",
-  about: "I am a data-driven professional with a background in Mathematics and Computer Science. My expertise spans data analysis, digital media strategy, UI/UX design, and operational management. I thrive at the intersection of technology, leadership, and innovation, leveraging tools like Python, SQL, and Figma to create meaningful solutions."
+  about: "I am a Nairobi-based UI/UX designer and digital strategist with a background in Mathematics and Computer Science. I combine visual design, web thinking, content strategy and SEO to create clear, practical digital experiences and communication assets."
 };
 
 export const SKILLS: Skill[] = [
   { name: "UI/UX Design (Figma)", level: 90 },
   { name: "Graphic Design (Canva)", level: 95 },
-  { name: "Web Development (React/WP)", level: 85 },
-  { name: "Data Analysis (SQL/Python)", level: 80 },
+  { name: "Web Design & Development", level: 85 },
+  { name: "Editorial & Presentation Design", level: 88 },
   { name: "Digital Strategy & SEO", level: 88 },
-  { name: "Project Management", level: 85 },
+  { name: "Content & Project Coordination", level: 85 },
 ];
 
 export const PROJECTS: Project[] = [
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     id: "p5",
     title: "Lead Sprint Promo Header Design",
     category: ProjectCategory.WEB_ASSETS,
-    description: "High-impact web header designed for the LadSprint promotion campaign for CLEAR Acceleration Inc. Optimized for web responsiveness.",
+    description: "High-impact web header designed for the LeadSprint promotion campaign for CLEAR Acceleration Inc. Optimized for web responsiveness.",
     link: "https://www.canva.com/design/DAGsgq-Zv4I/ksYJxjJhSd1v4eITq0McNg/edit?utm_content=DAGsgq-Zv4I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     tags: ["Web Header", "Promotion", "Banner"]
   },
